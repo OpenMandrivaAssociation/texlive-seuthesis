@@ -81,6 +81,7 @@ Nanjing, China.
 %doc %{_texmfdistdir}/source/latex/seuthesis/Makefile
 %doc %{_texmfdistdir}/source/latex/seuthesis/seuthesis.dtx
 %doc %{_texmfdistdir}/source/latex/seuthesis/seuthesis.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -91,3 +92,5 @@ Nanjing, China.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
