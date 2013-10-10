@@ -1,12 +1,12 @@
-# revision 18045
+# revision 29349
 # category Package
 # catalog-ctan /macros/latex/contrib/seuthesis
-# catalog-date 2010-04-20 20:52:24 +0200
+# catalog-date 2012-02-09 21:58:23 +0100
 # catalog-license gpl3
 # catalog-version 2.0.0
 Name:		texlive-seuthesis
 Version:	2.0.0
-Release:	2
+Release:	3
 Summary:	LaTeX template for theses at Southeastern University
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seuthesis
@@ -81,17 +81,3 @@ Nanjing, China.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.0.0-2
-+ Revision: 755916
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.0.0-1
-+ Revision: 719514
-- texlive-seuthesis
-- texlive-seuthesis
-- texlive-seuthesis
-- texlive-seuthesis
-
