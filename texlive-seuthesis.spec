@@ -1,12 +1,12 @@
-# revision 29349
+# revision 33042
 # category Package
 # catalog-ctan /macros/latex/contrib/seuthesis
-# catalog-date 2012-02-09 21:58:23 +0100
+# catalog-date 2014-02-24 07:33:27 +0100
 # catalog-license gpl3
-# catalog-version 2.0.0
+# catalog-version 2.1.2
 Name:		texlive-seuthesis
-Version:	2.0.0
-Release:	7
+Version:	2.1.2
+Release:	1
 Summary:	LaTeX template for theses at Southeastern University
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seuthesis
@@ -34,9 +34,7 @@ Nanjing, China.
 #-----------------------------------------------------------------------
 %files
 %{_texmfdistdir}/bibtex/bst/seuthesis/seuthesis.bst
-%{_texmfdistdir}/tex/latex/seuthesis/seuthesis-gbk.cfg
-%{_texmfdistdir}/tex/latex/seuthesis/seuthesis-utf8.cfg
-%{_texmfdistdir}/tex/latex/seuthesis/seuthesis.cls
+%doc %{_texmfdistdir}/doc/latex/seuthesis/Makefile
 %doc %{_texmfdistdir}/doc/latex/seuthesis/a3cover/A3cover.tex
 %doc %{_texmfdistdir}/doc/latex/seuthesis/a3cover/A4cover.tex
 %doc %{_texmfdistdir}/doc/latex/seuthesis/a3cover/a3cover.bat
@@ -46,19 +44,19 @@ Nanjing, China.
 %doc %{_texmfdistdir}/doc/latex/seuthesis/a3cover/bookspine_hor.tex
 %doc %{_texmfdistdir}/doc/latex/seuthesis/a3cover/bookspine_ver.tex
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/back-cover.png
+%doc %{_texmfdistdir}/doc/latex/seuthesis/figures/doctor-hwzs.pdf
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/doctor.png
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/engineering.png
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/front-cover.jpg
+%doc %{_texmfdistdir}/doc/latex/seuthesis/figures/master-hwzs.pdf
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/master.png
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/seu-badge-logo.eps
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/seu-badge-logo.pdf
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/seu-color-logo.png
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/seu-text-logo.eps
 %doc %{_texmfdistdir}/doc/latex/seuthesis/figures/seu-text-logo.png
-%doc %{_texmfdistdir}/doc/latex/seuthesis/gind.ist
 %doc %{_texmfdistdir}/doc/latex/seuthesis/sample-bachelor.pdf
 %doc %{_texmfdistdir}/doc/latex/seuthesis/sample-doctor.pdf
-%doc %{_texmfdistdir}/doc/latex/seuthesis/sample-engineering.pdf
 %doc %{_texmfdistdir}/doc/latex/seuthesis/sample-master.pdf
 %doc %{_texmfdistdir}/doc/latex/seuthesis/sample.tex
 %doc %{_texmfdistdir}/doc/latex/seuthesis/seuthesis.bib
@@ -68,7 +66,6 @@ Nanjing, China.
 %doc %{_texmfdistdir}/doc/latex/seuthesis/zharticle/zharticle.cfg
 %doc %{_texmfdistdir}/doc/latex/seuthesis/zharticle/zharticle.cls
 #- source
-%doc %{_texmfdistdir}/source/latex/seuthesis/Makefile
 %doc %{_texmfdistdir}/source/latex/seuthesis/seuthesis.dtx
 %doc %{_texmfdistdir}/source/latex/seuthesis/seuthesis.ins
 
@@ -80,4 +77,4 @@ Nanjing, China.
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar bibtex tex doc source %{buildroot}%{_texmfdistdir}
+cp -fpar bibtex doc source %{buildroot}%{_texmfdistdir}
