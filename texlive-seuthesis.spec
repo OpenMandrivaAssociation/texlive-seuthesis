@@ -1,19 +1,13 @@
-# revision 33042
-# category Package
-# catalog-ctan /macros/latex/contrib/seuthesis
-# catalog-date 2014-02-24 07:33:27 +0100
-# catalog-license gpl3
-# catalog-version 2.1.2
 Name:		texlive-seuthesis
-Version:	2.1.2
-Release:	6
+Version:	33042
+Release:	1
 Summary:	LaTeX template for theses at Southeastern University
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seuthesis
 License:	GPL3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seuthesis.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seuthesis.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seuthesis.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seuthesis.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seuthesis.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seuthesis.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -24,12 +18,12 @@ This template is for theses at Southeastern University,
 Nanjing, China.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -71,7 +65,8 @@ Nanjing, China.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
