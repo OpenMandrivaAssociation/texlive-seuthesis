@@ -1,6 +1,6 @@
 Name:		texlive-seuthesis
 Version:	33042
-Release:	1
+Release:	2
 Summary:	LaTeX template for theses at Southeastern University
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seuthesis
