@@ -3,7 +3,7 @@ Version:	33042
 Release:	2
 Summary:	LaTeX template for theses at Southeastern University
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/seuthesis
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/seuthesis
 License:	GPL3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seuthesis.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/seuthesis.doc.r%{version}.tar.xz
